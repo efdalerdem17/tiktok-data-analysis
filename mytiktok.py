@@ -83,28 +83,28 @@ plt.pie(gender_df['Distribution'], labels=gender_df['Gender'], autopct='%1.1f%%'
 plt.title('Gender Distribution')
 plt.show()
 
-# Spotify verilerini içe aktar
+# Spotify 
 spotify_file = "/Users/efdalerdem/Desktop/Streaming_History_Audio_2023_7.json"  # Spotify dosyanızın tam yolu
 spotify_df = pd.read_json(spotify_file)
 
-# Veri setini gözden geçirin
+
 print("Spotify Data Review:")
 print(spotify_df.tail(30))
 
-# Temel istatistikler
+
 print("Basic Statistics:")
 print(spotify_df.describe())
 
-# Toplam dinlenen süre
+
 total_listening_time = spotify_df['ms_played'].sum()
 print("Total Listening Time (in minutes):", total_listening_time / (1000 * 60))
 
-# En çok dinlenen şarkılar
+
 top_songs = spotify_df['master_metadata_track_name'].value_counts().head(10)
 print("Top 10 Listened Songs:")
 print(top_songs)
 
-# Günlük dinlenme grafiği
+
 spotify_df['ts'] = pd.to_datetime(spotify_df['ts'])
 daily_listenings = spotify_df.resample('D', on='ts').size()
 plt.figure(figsize=(12, 6))
@@ -120,7 +120,7 @@ plt.show()
 
 
 
-# Spotify "ms_played" değerlerini 1000'e bölme
+
 spotify_ms_played_values = [
     4070, 168920, 190, 190, 170, 140, 0, 920, 190, 220,
     429222, 255426, 191129, 237573, 223643, 323475, 219742,
@@ -130,7 +130,7 @@ spotify_ms_played_values = [
 
 spotify_ms_played_values = [value / 1000 for value in spotify_ms_played_values]
 
-# TikTok "video views" değerleri
+
 tiktok_video_views_values = [
     356, 430, 185, 99, 170, 168, 104, 157, 232, 169,
     177, 1223, 2020, 1110, 687, 314, 172, 103, 1758,
@@ -138,7 +138,7 @@ tiktok_video_views_values = [
     455
 ]
 
-# x ekseni değerleri (0'dan 29'a kadar olan sayılar)
+
 x_values = list(range(len(spotify_ms_played_values)))
 
 # Spotify scatter plot
@@ -147,7 +147,7 @@ plt.scatter(x_values, spotify_ms_played_values, color='green', marker='o', label
 # TikTok scatter plot
 plt.scatter(x_values, tiktok_video_views_values, color='blue', marker='x', label='TikTok Video Views')
 
-# Grafik özellikleri
+
 plt.title('Spotify Ms Played vs TikTok Video Views (Divided by 1000)')
 plt.xlabel('Index')
 plt.ylabel('Values')
