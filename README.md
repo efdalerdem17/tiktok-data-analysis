@@ -46,4 +46,4 @@ Web Development: Creating an interactive website to present the analysis, includ
 I have compared two parameters based on the data from the last month; however, this is not sufficient to validate the hypothesis. More data is needed for verification.
 In the continuation of the project, accuracy tests can be performed. Furthermore, a machine learning model could be developed to predict the average views of a video based on the
 amount of music listened to.
-
+Ayşe Efdal Erdem
