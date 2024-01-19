@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my tiktok data analysis </title>
+    <style>
+        body {
+            background-color: #FFD1DC; 
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #336633; /* Koyu Pastel Yeşil */
+        }
+        img {
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+        .scatter-plot {
+            width: 80%;
+            margin: 20px auto;
+        }
+        #hypothesis {
+            font-weight: bold;
+            color: #993399; /* Mor Renk */
+            margin-top: 20px;
+        }
+        #hypothesis p {
+            text-align: left;
+            margin-left: 20px;
+        }
+        #hypothesis ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #hypothesis li {
+            background-color: #f2f2f2; /* Açık Gri Arka Plan */
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        #investigate {
+            color: #336633; /* Koyu Pastel Yeşil */
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+    </style>
+<style>
+    /* ... (diğer stiller) ... */
+
+
+    .rectangle-frame img {
+        width: 100%;
+        height: auto;
+        border-radius: 0; /* Sıfır yaparak resmin yuvarlak köşelerini kaldırır */
+    }
+
+    /* ... (diğer stiller) ... */
+</style>
+    
+</head>
+<body>
+    <h1>my tiktok data analysis </h1>
+    <img src="/Users/efdalerdem/Desktop/Candace Flynn.jpg" alt="Profil Resmi" width="150">
+
+    <div id="hypothesis">
+        <p>My Hypothesis:</p>
+        <ul>
+            <li>When I listen to music, my creativity increases.</li>
+        </ul>
+    </div>
+    <div id="investigate">Let's Investigate My TikTok Data</div>
+    <div class="scatter-plot rectangle-frame"id="daily-views-plot">
+        <h2>Daily Video Views</h2>
+        <img src="/Users/efdalerdem/Desktop/tiktok grafik/video views.png" alt="Daily Video Views Plot" width="100%">
+    </div>
+    
+    <div class="scatter-plot rectangle-frame" id="daily-likes-plot">
+        <h2>Daily Likes</h2>
+        <img src="/Users/efdalerdem/Desktop/tiktok grafik/likes.png" alt="Daily Likes Plot" width="100%">
+    </div>
+    
+    <div class="scatter-plot rectangle-frame"id="unique-viewers-plot">
+        <h2>Unique Viewers</h2>
+        <img src="/Users/efdalerdem/Desktop/tiktok grafik/unique.png" alt="Unique Viewers Plot" width="100%">
+    </div>
+    
+    <div class= "scatter-plot rectangle-frame" id="daily-profile-views-plot">
+        <h2>Daily Profile Views</h2>
+        <img src="/Users/efdalerdem/Desktop/tiktok grafik/profile views.png" alt="Daily Profile Views Plot" width="100%">
+    </div>
+    <div class= "scatter-plot rectangle-frame" id="total-followers-plot">
+        <h2>Total Followers </h2>
+        <img src="/Users/efdalerdem/Desktop/tiktok grafik/total followers.png" alt="Daily Profile Views Plot" width="100%">
+    </div>
+    <div class= "scatter-plot rectangle-frame" id="gender-distribution-plot">
+        <h2>Gender Distribution </h2>
+        <img src="/Users/efdalerdem/Desktop/tiktok grafik/gender pie chart.png" alt="Daily Profile Views Plot" width="100%">
+    </div>
+
+    <div id="spotify-listening-intro">
+        <p>Now let's explore my daily listening on Spotify. </p>
+    </div>
+    
+    <div class="scatter-plot rectangle-frame" id="spotify-listening-plot">
+        <h2>Spotify Daily Listening in ms </h2>
+        <img src="/Users/efdalerdem/Desktop/tiktok grafik/spotify daily listening counts.png" alt="Spotify Daily Listening Minutes Plot" width="100%" style="border-radius: 0;">
+    </div>
+    <div id="hypothesis">
+        <p style="font-weight: bold; color: #993399; margin-top: 20px; text-align: left; margin-left: 20px;">
+            My Hypothesis:
+        </p>
+        <ul style="list-style-type: none; padding: 0;">
+            <li style="background-color: #f2f2f2; padding: 10px; margin: 5px; border-radius: 5px;">
+                I associated my creativity with the number of TikTok views. In other words, I interpreted the data by assuming that I produced more content that garnered higher views due to my creative output. I attempted to establish a connection between all the components I examined on TikTok and my Spotify music listening habits. I will share the graph that provides the most reasonable result, correlating my daily views on TikTok with my daily Spotify listening. As my Spotify listening count increases, there is a general increase in my daily views. However, there are some days with discrepancies, which can be attributed to factors such as not sharing videos on those days, the previous video gaining significant views, and other influencing factors. I will present this graph for further insight.
+            </li>
+        </ul>
+    </div>
+    <div class="scatter-plot rectangle-frame" id="comparing-plot">
+        <h2>Spotify Daily Listening vs Tiktok Daily Video Views  </h2>
+        <img src="/Users/efdalerdem/Desktop/tiktok grafik/compare.png" alt="Spotify Daily Listening Minutes Plot" width="100%" style="border-radius: 0;">
+    </div>
+    
+    
+ 
+    
+</body>
+</html>
